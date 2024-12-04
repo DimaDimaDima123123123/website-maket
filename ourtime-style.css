@@ -1,0 +1,231 @@
+* {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html, body {
+      margin: 0;
+      padding: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+
+    body {
+      background: url('background3.jpg') no-repeat center top / cover;
+      background-attachment: fixed;
+    }
+
+    main {
+      color: white;
+      padding-left: 7%;
+      padding-right: 7%;
+      padding: 4%;
+    }
+
+    .title {
+      border-radius: 15px;
+      padding: 0.5%;
+      font-weight: 800;
+      font-size: 2.5em;
+      display: inline;
+      background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    .text {
+      margin-top: 3%;
+      font-size: 1.4em;
+      padding: 0.5%;
+      background-color: rgba(0, 0, 0, 0.5);
+      border-radius: 15px;
+      padding-left: 2%;
+      padding-right: 2%;
+    }
+
+    .content {
+    }
+
+    a {
+      outline: none;
+      color: inherit;
+      background-color: transparent;
+      text-decoration: none;
+    }
+
+    a:focus, a:active {
+      outline: none;
+      color: inherit;
+      background-color: transparent;
+    }
+
+    nav {
+      background-color: rgba(0, 0, 20, 0.6);
+      min-height: 10vh;
+    }  
+    #current {
+      font-weight: bolder;
+      color: yellow;
+    }
+
+    .navbar-nav .nav-link:hover {
+      color: yellow;
+    }
+
+    footer
+    {
+      background-color: rgba(0, 0, 20);
+      min-height: 20vh;
+      color: rgba(255, 255, 255);
+      padding: 3%;
+      opacity: 90%;
+      display: flex;
+      font-size: 1.2em;
+      display: flex;
+      justify-content: space-between;
+    }
+    footer h4 {
+      color: rgba(255, 255, 0);
+    }
+    footer div
+    {
+      max-width: 30%;
+    }
+    .website-name {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: auto;
+      background-color: rgba(0, 0, 20, 0.65);
+      border-bottom: 3px solid rgb(252, 194, 3, 0.8);
+      padding-top: 0.5%;
+    }
+    .website-name h1 {
+      letter-spacing: .2rem;
+      word-spacing: .2rem;
+      font-family: Bebas Neue;
+      color: yellow;
+    }
+   .marked
+    {
+      color: yellow;
+    }
+    p {
+      text-indent: 1%;
+    }
+    .terminid
+    {
+      color: orange;
+    }
+    .robot 
+    {
+      color: red;
+    }
+    #slides-top
+    {
+      display: flex;
+      justify-content: center;
+    }
+    #slides-top p
+    {
+      text-indent: 0%;
+    }
+
+#slider 
+{
+    position: relative;
+    text-align: center;
+    top: 10px;
+}
+
+#slider{ 
+  margin: 0 auto;
+}
+
+#slides article{ 
+  width: 20%;
+  float: left;
+}
+
+#slides .image{ 
+  width: 500%;
+  line-height: 0;
+}
+
+#overflow{ 
+  width: 100%;
+  overflow: hidden;
+}
+
+article img{ 
+  width: 50%;
+}
+
+#desktop:checked ~ #slider{ 
+  max-width: 60%; 
+}
+
+
+label, a
+{ 
+  cursor: pointer;
+}
+
+.all input
+{ 
+  display: none;
+}
+
+#switch1:checked ~ #slides .image{
+  margin-left: 0;
+}
+
+#switch2:checked ~ #slides .image{
+  margin-left: -100%;
+}
+
+#switch3:checked ~ #slides .image{
+  margin-left: -200%;
+}
+
+#switch4:checked ~ #slides .image{
+  margin-left: -300%;
+}
+
+#switch5:checked ~ #slides .image{
+  margin-left: -400%;
+}
+
+#controls
+{ 
+  margin: -25% 0 0 0;
+  width: 100%;
+  height: 50px;
+}
+
+#active label
+{
+  border-radius: 10px;
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  background: #bbb;
+}
+
+#active{ 
+  margin: 23% 0 0;
+  text-align: center;
+}
+
+#active label:hover{ 
+  background: lightyellow;
+  border-color: #777 !important;
+}
+
+
+#switch1:checked ~ #active label:nth-child(1),
+#switch2:checked ~ #active label:nth-child(2),
+#switch3:checked ~ #active label:nth-child(3),
+#switch4:checked ~ #active label:nth-child(4),
+#switch5:checked ~ #active label:nth-child(5){
+  background: yellow;
+  border-color: yellow !important;
+}

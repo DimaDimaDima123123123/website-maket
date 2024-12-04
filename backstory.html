@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Website</title>
+  <link rel="stylesheet" href="backstory-style.css">
+  <link rel="shortcut icon" href="shortcut-icon.png">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Jaro:opsz@6..72&display=swap" rel="stylesheet">
+</head>
+<style>
+    .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=UTF8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' fill='%23FFFFFF' class='bi bi-list' viewBox='0 0 16 16'%3E%3Cpath fill-rule='evenodd' d='M2.5 12.5a.5.5 0 0 1 0-1h11a.5.5 0 0 1 0 1h-11zm0-5a.5.5 0 0 1 0-1h11a.5.5 0 0 1 0 1h-11zm0-5a.5.5 0 0 1 0-1h11a.5.5 0 0 1 0 1h-11z'/%3E%3C/svg%3E");
+    }
+    .navbar-toggler-icon:hover {
+      background-image: url("data:image/svg+xml;charset=UTF8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' fill='%23FFFF00' class='bi bi-list' viewBox='0 0 16 16'%3E%3Cpath fill-rule='evenodd' d='M2.5 12.5a.5.5 0 0 1 0-1h11a.5.5 0 0 1 0 1h-11zm0-5a.5.5 0 0 1 0-1h11a.5.5 0 0 1 0 1h-11zm0-5a.5.5 0 0 1 0-1h11a.5.5 0 0 1 0 1h-11z'/%3E%3C/svg%3E");
+    }
+    .navbar-toggler {
+      border: none;
+      color: yellow; 
+    }
+    .navbar-nav .nav-link {
+      font-size: 1.5em;  
+      padding-left: 5%;
+      padding-right: 5%;
+      color: white;
+    }
+    .navbar-brand {
+      font-size: 1.5em; 
+      padding-left: 5%; 
+    }
+    .navbar-light .navbar-brand {
+        color: white;
+        font-weight: bolder;
+    }
+    .navbar-light .navbar-brand:hover {
+    color: yellow;
+    }
+
+</style>
+<body>
+  <div class="website-name">
+    <h1>Democratic Super Archive</h1>
+  </div>
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <a class="nav-item nav-link navbar-brand" href="main.html">ГЛАВНАЯ</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a id="current" class="nav-item nav-link navbar-brand" href="backstory.html">ПРЕДИСТОРИЯ</a>
+        <a class="nav-item nav-link" href="ourtime.html">НАШЕ ВРЕМЯ</a>
+        <a class="nav-item nav-link" href="memorial.html">МЕМОРИАЛ</a>
+        <a class="nav-item nav-link" href="future.html">БУДУЩЕЕ</a>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <div class="content">
+      <div class="title">ПРЕДИСТОРИЯ</div>
+      <div class="text">
+        <p>Процветающий и истинно свободный образ жизни нашей галактики это, конечно, <span class="marked">управляемая демократия</span>. Но так было не всегда.</p>
+        <p>Эпоха старого тиранического мира подходила к концу, множество конфликтующих тиранических идеологий враждовали друг с другом, что привело к всемасштабной ядерной войне. Человечество было на грани вымирания, но сплотившись между собой, самые отважные и храбрые объединили всю планету в единое государство. Спустя долгие годы восстановлений и реформ, наша планета стала называться <span class="marked">Супер Земля</span>.</p>
+          <div id="map-top">
+            <p>Больше не было враждующих держав, появился единый демократичесий строй. Карта <span class="marked">Супер Земли</span>:</p>
+          </div>
+          <div id="map">
+            <img src="earth-map.png" width="70%" height="auto">
+          </div>
+          <br>
+          <img id="war-map1"src="war-map1.png">
+
+        <p>Быстро встав на ноги, человечество начало развиваться с буквально космической скоростью. Но амбициозно расширяя своё колониальное влияние по всей галактике, <span class="marked">Супер Земля</span> столкнулась с многими трудностями. Во время колониальной кампании, человечество было подвергнуто гнусному нападению с многих сторон, что знаменовало собой начало <span class="marked">Первой Галактической Войны.</span></p>
+        <p>Против нас выступило три разных противника:</p>
+                <ul class="enemy-list">
+          <li>
+            <a href="#part1">
+              <span class="terminid">Терминиды</span>
+            </a>
+          </li>
+          <li>
+            <a href="#part2">
+              <span class="robot">Киборги</span>
+            </a>
+          </li>
+          <li>
+            <a href="#part3">
+              <span class="illuminate">Просветлённые</span>
+            </a>
+            </li>
+        </ul>
+
+        <article id="part1">
+          <img src="terminid1.png" id="terminid1">
+          <p><span class="terminid">Терминиды.</span> Во время начала своей колониальной кампании, <span class="marked">Супер Земля</span> разработала биоматериал "<span>Э-710</span>", который извлекался из самих <span>терминидов</span>, вида стадных огромных жуков, которые находились под пристальным контролем, в фабричных условиях. Однако они вырвались из-под контроля и начали наступление, обладая громадным численным ресурсом и способностью распростронять свои споры между планет, что позволяло им оккупировать всё больше и больше подконтрольных нам колоний.</p>
+        </article>
+        <article id="part2">
+          <img src="robot1.png" id="robot1">
+          <p><span class="robot">Киборги.</span> Во время скачка общего технологического прогресса, многие люди, особенно солдаты, стали всячески модернезировать свои тела. Улучшенные конечности, органы и так далее, позволяли продлить жизнь, улучшить физические навыки человека. Однако из-за чрезмерного использования таких технологий, некоторые люди стали терять контроль, всё чаще "улучшая" себя. Многие стали злоупотреблять имплантами. Объединившись в единую группировку, <span class="robot">киборги</span> объявили свою независимость и территории, подло обвинив <span class="marked">Супер Землю</span> в угнетении и тоталитаризме. Как итог, киборги оккупировали несколько космических секторов в галактике, подняли бунт и объявили войну <span class="marked">Супер Земле</span>, угрожая ей тиранией и уничтожением.
+        </article>
+        <article id="part3">
+          <img src="illuminate1.jpg" id="illuminate1">
+          <p>
+            <span class="illuminate">Просветлённые.</span> Под конец колонизации галактики, человество наткнулось на её дальних просторах на неизвиданную ранее разумную жизнь. Так называемые "<span class="illuminate">просветлённые</span>" отличались невероятным техническим прогрессом. Используя передовые методы приломления фотонов света, атомный синтез и переобразовывание чёрной материи, они обладали ужасающим военным потенциалом.  Естественно, такой разумный вид очень сильно угрожал <span class="marked">Супер Земле</span>. Их нежелание превстать на колени перед законными хозяевами галактики, спровоцировало войну.
+          </p>
+        </article>
+        <p>Долгие годы кровопролитных битв за громадные участки галактики. Миллионы павших <span class="marked">Адских Десантников</span>. Сотни пострадавших планет. <span class="marked">Первая Галактическая Война</span> принесла множество жертв и страданий, но с неверятной стойкостью и закалкой, человечество смогло победить всех врагов <span class="marked">управляемой демократии</span>, восстановить баланс сил в галактике и вернуть себе все исконные космические территории.</p>
+        <div class="helldivers1-pic">
+          <img src="helldivers1.jpg" id="helldivers1">
+        </div>
+        <div class="under-pic">
+          <span class="marked">Отряд Адских Десантников времён Первой Галактической Войны</span>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <div class="about-us">
+      <h4>О проекте</h4>
+      <p>Мы предоставляем правдивую информацию о легендарной борьбе человества за свободу, демократию и процветание.</p>
+    </div>
+    <div class="credits">
+      <h4>При поддержке</h4>
+      <ul>
+        <li>Министерство Правды Супер Земли</li>
+        <li>Демократический архив Супер Земли</li>
+        <li>Рассказы бравых адских десантников</li>
+      </ul>
+    </div>
+    <div class="contacts">
+      <h4>Контакты</h4>
+      <ul>
+        <li>Адрес: Супер Земля, Площадь Свободы 18</li>
+        <li>Телефон: +4537291872164</li>
+        <li>Email: liberty.email</li>
+      </ul>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
